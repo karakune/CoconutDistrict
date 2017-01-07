@@ -10,8 +10,7 @@ public class CamGuy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -38,7 +37,4 @@ public class CamGuy : MonoBehaviour {
     {
         shotFired = value;
     }
-    //Input.GetKeyDown(KeyCode.JoystickButton1)
-    //Input.GetAxis("Horizontal")
-    //edit -> project settings -> Input -> Horizontal -> Type -> axis
 }
