@@ -894,10 +894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de647ace0a51164d9869c2bb77083ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightScale: 1
-  xScale: 1
-  YScale: 1
   Shaking: 0
+  IntialShakeIntensity: 0.1
+  InitialShakeDecay: 0.0065
 --- !u!1 &1080358066
 GameObject:
   m_ObjectHideFlags: 0
