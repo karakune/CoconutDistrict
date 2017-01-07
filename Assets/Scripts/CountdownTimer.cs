@@ -23,7 +23,7 @@ public class CountdownTimer : MonoBehaviour
 
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
-        var ms = (time * 100) % 100;
+        var ms = (time * 1000) % 1000;
 
         //critical time, change color
         if (time <= CriticalTime)
@@ -33,9 +33,14 @@ public class CountdownTimer : MonoBehaviour
 
         }
 
-        if (time >= 0)
+        if (time > 0)
         {
             lblTimer.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, ms);
+        }
+        else
+        {
+            lblTimer.text = "0:00:000";
+            this.enabled = false;
         }
     }
 
