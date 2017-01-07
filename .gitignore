@@ -37,3 +37,7 @@ Library/ScriptAssemblies/BuiltinAssemblies.stamp
 Library/shadercompiler-UnityShaderCompiler.exe0.log
 Library/UnityAssemblies/version.txt
 ProjectSettings/InputManager.asset
+Library/assetDatabase3
+Library/*.exe0.log
+Library/UnityAssemblies/version.txt
+Temp/UnityLockfile
