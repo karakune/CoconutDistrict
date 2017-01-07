@@ -29,3 +29,11 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Library/metadata/*
+Temp/UnityLockfile
+Library/assetDatabase3
+Library/InspectorExpandedItems.asset
+Library/ScriptAssemblies/BuiltinAssemblies.stamp
+Library/shadercompiler-UnityShaderCompiler.exe0.log
+Library/UnityAssemblies/version.txt
+ProjectSettings/InputManager.asset
