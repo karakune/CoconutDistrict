@@ -50,21 +50,20 @@ public class JunkSpanwer : TimerFunctionsClass
                 //Astronaut a = p.GetComponent<Astronaut>();
                 //if (a.State >= Astronaut.AstronautState.Ejecting)
                 //    continue; //next player;
-
-                var playerTheta = Mathf.Atan2(p.transform.position.y, p.transform.position.x);
-           
-
-                var angle = (360.0f + (((playerTheta * 180)) / Mathf.PI)) % 360;  ///TODO : a changer pour p.theta
-                //print("angle:" + angle);
-
+ 
                 var JunkType = Mathf.RoundToInt(Mathf.Floor(UnityEngine.Random.Range(0f, 3.999f)));
 
-                float direction = (Mathf.Floor(UnityEngine.Random.Range(0.0f, 1.99f)) * 2 - 1);
+                float directionx = (Mathf.Floor(UnityEngine.Random.Range(10.0f, 15.0f)) * (Mathf.Floor(UnityEngine.Random.Range(-1.0f, 1.99f) * 2 - 1) ));
+                float directiony = (Mathf.Floor(UnityEngine.Random.Range(-3.0f, 2.99f))  );
 
-                Instantiate(JunkPrefabTypes[JunkType],
-                            direction * p.transform.position,
-                            Quaternion.identity);
-            }
+                var debris = Instantiate(JunkPrefabTypes[JunkType],
+                                new Vector3(p.transform.position.x + directionx, p.transform.position.y + directiony) ,
+                                Quaternion.identity);
+
+                //add force vers le joueur
+                debris.GetComponent<Rigidbody>().AddForce(new Vector3(50 * directionx * -1,10,0) * 20 * Time.deltaTime);
+
+        }
 
 
         //Cooldown untill next random spawn

@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4679444862454450}
   - component: {fileID: 212284734682565598}
   - component: {fileID: 65892223846027656}
+  - component: {fileID: 54457102723361252}
+  - component: {fileID: 75298321862602666}
   m_Layer: 0
   m_Name: Wheel
-  m_TagString: Untagged
+  m_TagString: Debris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54457102723361252
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1930254548302670}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65892223846027656
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -53,6 +70,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.84, y: 6.84, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!75 &75298321862602666
+ConstantForce:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1930254548302670}
+  m_Enabled: 1
+  m_Force: {x: 0, y: -0.05, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!212 &212284734682565598
 SpriteRenderer:
   m_ObjectHideFlags: 1

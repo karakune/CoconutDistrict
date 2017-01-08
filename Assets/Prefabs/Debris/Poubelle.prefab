@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4980562499399678}
   - component: {fileID: 212852057309200230}
   - component: {fileID: 65616504162688604}
+  - component: {fileID: 54165775124370138}
+  - component: {fileID: 75842036484998944}
   m_Layer: 0
   m_Name: Poubelle
-  m_TagString: Untagged
+  m_TagString: Debris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54165775124370138
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898543621395656}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65616504162688604
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -53,6 +70,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.16, y: 9.71, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!75 &75842036484998944
+ConstantForce:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898543621395656}
+  m_Enabled: 1
+  m_Force: {x: 0, y: -0.05, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!212 &212852057309200230
 SpriteRenderer:
   m_ObjectHideFlags: 1
