@@ -53,7 +53,7 @@ public class JunkSpanwer : TimerFunctionsClass
  
                 var JunkType = Mathf.RoundToInt(Mathf.Floor(UnityEngine.Random.Range(0f, 3.999f)));
 
-                float directionx = (Mathf.Floor(UnityEngine.Random.Range(10.0f, 15.0f)) * (Mathf.Floor(UnityEngine.Random.Range(-1.0f, 1.99f) * 2 - 1) ));
+                float directionx = (Mathf.Floor(UnityEngine.Random.Range(10.0f, 15.0f)) * (Mathf.Floor(UnityEngine.Random.Range(0.0f, 1.99f) * 2 - 1) ));
                 float directiony = (Mathf.Floor(UnityEngine.Random.Range(-3.0f, 2.99f))  );
 
                 var debris = Instantiate(JunkPrefabTypes[JunkType],

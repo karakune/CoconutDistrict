@@ -38,6 +38,8 @@ public class ShootingRocket : MonoBehaviour {
             if (smokeAnimator != null) smokeAnimator.enabled = true;
 
             ResetRocketInGun( other);
+            Destroy(other);
+            DestroyImmediate(other);
         }
 	}
 
