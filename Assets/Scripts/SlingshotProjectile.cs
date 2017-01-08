@@ -8,6 +8,7 @@ public class SlingshotProjectile : MonoBehaviour {
     //number of frames before object is destroyed
     public int lifespan;
     int framesCounted = 0;
+    public float activationDistance;
 
     Camera parent;
 
@@ -31,6 +32,13 @@ public class SlingshotProjectile : MonoBehaviour {
         {
             parent.GetComponent<CamGuy>().SetShotFired(false);
             Destroy(this.gameObject);
+        }
+        if (transform.position.z > -activationDistance && transform.position.z < activationDistance)
+        {
+            GetComponent<SphereCollider>().enabled = true;
+        }else
+        {
+            GetComponent<SphereCollider>().enabled = false;
         }
     }
 

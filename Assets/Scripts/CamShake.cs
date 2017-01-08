@@ -45,7 +45,7 @@ public class CamShake : MonoBehaviour {
 
        // if (GUI.Button(new Rect(10, 200, 50, 30), "Shake"))
        // DoShake();
-        Debug.Log("Shake");
+        //Debug.Log("Shake");
 
     }
      

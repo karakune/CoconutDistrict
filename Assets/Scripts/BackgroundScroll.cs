@@ -17,7 +17,7 @@ public class BackgroundScroll : MonoBehaviour {
         edgeDistanceX = (gameObject.transform.localScale.x / 2) - 
             (horEdge.transform.localPosition.x + horEdge.transform.localScale.x / 2);
         edgeDistanceY = (gameObject.transform.localScale.y / 2) -
-            (horEdge.transform.localPosition.y + horEdge.transform.localScale.y / 2);
+            (vertEdge.transform.localPosition.y + vertEdge.transform.localScale.y / 2);
     }
 	
 	// Update is called once per frame

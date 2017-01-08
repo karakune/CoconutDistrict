@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114000012114798582}
   m_Layer: 0
   m_Name: Slingshot Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ySpeed: 1000
   lifespan: 120
+  activationDistance: 2
 --- !u!135 &135000013227022518
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -161,7 +162,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012922425290}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
