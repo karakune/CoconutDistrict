@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour {
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
-	void OnTriggerEnter(Collider other)
+	public void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Cage")
 		{
