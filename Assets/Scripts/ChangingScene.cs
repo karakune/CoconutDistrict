@@ -12,7 +12,6 @@ public class ChangingScene : MonoBehaviour {
 		if (GameVars.currImage == null) {
 			GameVars.currImage = 0;
 		}
-		GameVars.inIntro = true;
 
 	}
 	// Update is called once per frame
@@ -24,7 +23,7 @@ public class ChangingScene : MonoBehaviour {
 	}
 
 	public void Play(){
-		if(!GameVars.inIntro){
+		if(!GameVars.inIntro && !GameVars.inRestart){
 			GameVars.inIntro = true;
 			SceneManager.LoadScene ("Intro");
 		}
@@ -54,6 +53,7 @@ public class ChangingScene : MonoBehaviour {
 			GameVars.currImage++;
 		} else {
 			//code for change scene
+
 			SceneManager.LoadScene ("GameScene");
 		}
 	}

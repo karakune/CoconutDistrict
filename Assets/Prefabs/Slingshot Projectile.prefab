@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ySpeed: 1000
-  lifespan: 120
+  lifespan: 100
   activationDistance: 2
 --- !u!135 &135000013227022518
 SphereCollider:

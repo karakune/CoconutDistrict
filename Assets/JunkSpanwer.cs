@@ -51,7 +51,7 @@ public class JunkSpanwer : TimerFunctionsClass
                 //if (a.State >= Astronaut.AstronautState.Ejecting)
                 //    continue; //next player;
  
-                var JunkType = Mathf.RoundToInt(Mathf.Floor(UnityEngine.Random.Range(0f, 3.999f)));
+                var JunkType = Mathf.RoundToInt(Mathf.Floor(UnityEngine.Random.Range(0f, 13.999f)));
 
                 float directionx = (Mathf.Floor(UnityEngine.Random.Range(10.0f, 15.0f)) * (Mathf.Floor(UnityEngine.Random.Range(0.0f, 1.99f) * 2 - 1) ));
                 float directiony = (Mathf.Floor(UnityEngine.Random.Range(-3.0f, 2.99f))  );
@@ -61,7 +61,7 @@ public class JunkSpanwer : TimerFunctionsClass
                                 Quaternion.identity);
 
                 //add force vers le joueur
-                debris.GetComponent<Rigidbody>().AddForce(new Vector3(50 * directionx * -1,10,0) * 20 * Time.deltaTime);
+                debris.GetComponent<Rigidbody>().AddForce(new Vector3(30 * directionx * -1,10,0) * 2 * Time.deltaTime);
 
         }
 
