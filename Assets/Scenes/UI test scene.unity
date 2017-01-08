@@ -1207,6 +1207,48 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1451147317
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.77623993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.076904
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018797209488424, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3ab4d98e06c2d7547b8300f70dd86e1b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1625710954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocket: {fileID: 1625710954}
+  force: 0
 --- !u!1001 &2084250710
 Prefab:
   m_ObjectHideFlags: 0
@@ -1574,6 +1617,11 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1024362655}
+    - target: {fileID: 114082435061102374, guid: 55569d52d24640449848d7ba6943487b,
+        type: 2}
+      propertyPath: time
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55569d52d24640449848d7ba6943487b, type: 2}
   m_IsPrefabParent: 0
