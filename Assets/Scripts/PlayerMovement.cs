@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour {
             Rotate();
         }
 
-		Debug.LogWarning (Input.GetAxis ("GarbageF1"));
+		//Debug.LogWarning (Input.GetAxis ("GarbageF1"));
 
 		if (Input.GetAxis ("GarbageF1") == -1) {
      		
