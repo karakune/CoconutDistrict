@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012922425290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 2.8838656, y: -8.33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -123,14 +123,14 @@ MonoBehaviour:
   - 
   ints: 
   floats:
-  - 1.5
+  - 3
   bools: 
   strings:
   - obj arcpath
   vector3s: []
   colors: []
   spaces: 
-  easeTypes: 04000000
+  easeTypes: 01000000
   loopTypes: 
   gameObjects: []
   transforms: []
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ySpeed: 1000
-  lifespan: 120
+  lifespan: 200
 --- !u!135 &135000013227022518
 SphereCollider:
   m_ObjectHideFlags: 1

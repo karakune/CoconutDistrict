@@ -23,8 +23,9 @@ public class CamGuy : MonoBehaviour {
     {
         Camera.main.transform.Translate(Input.GetAxis("CamGuy X") * speed * Time.deltaTime,
             Input.GetAxis("CamGuy Y") * speed * Time.deltaTime * -1, 0);
+        //Debug.Log(Input.GetAxis("Fire1"));
         //right trigger pressed
-        if (Input.GetAxis("CamGuy Projectile") == -1 && !shotFired)
+		if (Input.GetAxis("CamGuy Projectile") == -1 && !shotFired)
         {
             iTweenPath pathe = arc.GetComponent<iTweenPath>();
             pathe.nodes.Clear();
