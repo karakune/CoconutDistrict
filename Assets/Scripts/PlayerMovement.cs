@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Specialized;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector3 playerPosition;
 	private Vector3 foo;
 
+    public GameObject RocketSmokeAnimation;
     public GameObject rocket;
 	public float force;
     // Use this for initialization
@@ -52,7 +54,16 @@ public class PlayerMovement : MonoBehaviour {
 				angle1 = angle1 * Mathf.Deg2Rad;
 				rocket.GetComponent<Rigidbody> ().velocity = Vector2.zero;
 				rocket.GetComponent<Rigidbody> ().AddForce (new Vector2(Mathf.Cos(angle1), Mathf.Sin(angle1)) * force * 20 * Time.deltaTime);
-				GetComponent<Rigidbody> ().AddForce (new Vector2 (-Mathf.Cos(angle1), -Mathf.Sin(angle1)) * force/2 * Time.deltaTime);
+
+			    var smoke = Instantiate(RocketSmokeAnimation);
+			    smoke.transform.parent = rocket.transform;
+                smoke.transform.localPosition = new Vector3(-9,1,0);
+			    smoke.transform.rotation = rocket.transform.rotation;
+
+                Animator smokeAnimator = smoke.GetComponent<Animator>();
+                if (smokeAnimator != null) smokeAnimator.enabled = true;
+
+                GetComponent<Rigidbody> ().AddForce (new Vector2 (-Mathf.Cos(angle1), -Mathf.Sin(angle1)) * force/2 * Time.deltaTime);
 			}
 		} 
 			

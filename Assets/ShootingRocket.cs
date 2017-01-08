@@ -33,6 +33,10 @@ public class ShootingRocket : MonoBehaviour {
 			transform.rotation = player.transform.parent.rotation;
 			transform.localScale = new Vector3( 0.2f,0.2f,0.2f);
 			gameObject.SetActive (true);
+
+		    Animator smoke = gameObject.GetComponentInChildren<Animator>();
+		    if (smoke != null )smoke.enabled = false;
+
 			Debug.Log(transform.localScale.x + " c");
 		}
 	}
