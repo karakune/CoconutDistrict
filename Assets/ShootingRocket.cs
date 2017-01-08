@@ -38,8 +38,10 @@ public class ShootingRocket : MonoBehaviour {
             if (smokeAnimator != null) smokeAnimator.enabled = true;
 
             ResetRocketInGun( other);
+	        ((SpriteRenderer) other.GetComponent<SpriteRenderer>()).enabled = false;
+
+            ((ScoreManager)GameObject.FindObjectOfType(typeof(ScoreManager))).AddScore(50);
             Destroy(other);
-            DestroyImmediate(other);
         }
 	}
 
@@ -54,6 +56,9 @@ public class ShootingRocket : MonoBehaviour {
         Debug.Log("repositonned");
         GetComponent<Rigidbody>().velocity = player.transform.parent.GetComponent<Rigidbody>().velocity;
         transform.rotation = player.transform.parent.rotation;
+        transform.rotation.Set(0,0, player.transform.parent.rotation.z,0);
+        
+
         transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
         gameObject.SetActive(true);
 

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65522841822137398}
   - component: {fileID: 54258758192469550}
   - component: {fileID: 75514719037598216}
+  - component: {fileID: 114082180150012102}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Debris
@@ -81,6 +82,17 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &114082180150012102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1484672947853328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6c2a83f2f7aad4c843bfa20af49427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212208526142618422
 SpriteRenderer:
   m_ObjectHideFlags: 1

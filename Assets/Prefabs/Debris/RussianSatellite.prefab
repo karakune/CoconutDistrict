@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 136369304512571350}
   - component: {fileID: 54016288724909810}
   - component: {fileID: 75397861342433940}
+  - component: {fileID: 114497042177022804}
+  - component: {fileID: 114711309194095294}
   m_Layer: 0
   m_Name: RussianSatellite
   m_TagString: Debris
@@ -69,6 +71,28 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &114497042177022804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650669265374638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6c2a83f2f7aad4c843bfa20af49427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114711309194095294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650669265374638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6c2a83f2f7aad4c843bfa20af49427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136369304512571350
 CapsuleCollider:
   m_ObjectHideFlags: 1

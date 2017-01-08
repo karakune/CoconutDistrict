@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65697751416598096}
   - component: {fileID: 54717629563512476}
   - component: {fileID: 75202603857081228}
+  - component: {fileID: 114410804447906896}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Debris
@@ -81,6 +82,17 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &114410804447906896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1120727191775544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6c2a83f2f7aad4c843bfa20af49427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212532491609171770
 SpriteRenderer:
   m_ObjectHideFlags: 1
