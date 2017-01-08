@@ -14,10 +14,22 @@ public class PlayerMovement : MonoBehaviour {
 
     public GameObject rocket;
 	public float force;
+
+    GameObject stun1;
+    GameObject stun2;
+    GameObject perso;
+    bool hitByProjectile = false;
+    public int stunTime;
+    private int framesCounted = 0;
+
     // Use this for initialization
     void Start()
     {
-
+        stun1 = GameObject.Find("Stun1");
+        stun2 = GameObject.Find("Stun2");
+        stun1.SetActive(false);
+        stun2.SetActive(false);
+        perso = GameObject.Find("Perso");
     }
 
     // Update is called once per frame
@@ -85,6 +97,34 @@ public class PlayerMovement : MonoBehaviour {
 		}*/
 		//Debug.LogWarning (Input.GetAxis ("GarbageF1"));
         //p1.transform.parent = Camera.main.transform;
+
+        if(hitByProjectile == true)
+        {
+            framesCounted++;
+        }
+
+        if(framesCounted > 0)
+        {
+            if(framesCounted % 2 != 0)
+            {
+                perso.SetActive(false);
+                stun1.SetActive(true);
+                stun2.SetActive(false);
+            }else
+            {
+                perso.SetActive(false);
+                stun1.SetActive(false);
+                stun2.SetActive(true);
+            }
+            if(framesCounted > stunTime)
+            {
+                framesCounted = 0;
+                hitByProjectile = false;
+                perso.SetActive(true);
+                stun1.SetActive(false);
+                stun2.SetActive(false);
+            }
+        }
     }
 		void Rotate(){
     
@@ -109,6 +149,11 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			Debug.LogWarning ("oh no!!");
 		}
+
+        if (other.gameObject.tag == "Projectile")
+        {
+            hitByProjectile = true;
+        }
 	}/*
 	public void setIsShooted(bool isShooted){
 		this.isShooted = isShooted;
