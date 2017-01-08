@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Specialized;
 
 public class PlayerMovement : MonoBehaviour {
 
     private float x;
     private float y;
+	private float x1;
+	private float y1;
     private float shot;
     private float angle;
+	private float angle1;
+	private Vector2 dir;
 	private Vector3 playerPosition;
 	private Vector3 foo;
-//    private bool isShooted = false;
 
-
+    public GameObject RocketSmokeAnimation;
     public GameObject rocket;
 	public float force;
 
@@ -35,7 +39,6 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-		//isShooted = false;
 		x = Input.GetAxis("GarbageH1");
 		y = Input.GetAxis("GarbageV1");
         if (x == 0 && y == 0)
@@ -45,52 +48,37 @@ public class PlayerMovement : MonoBehaviour {
         {
             Rotate();
         }
+
+		//Debug.LogWarning (Input.GetAxis ("GarbageF1"));
+
 		if (Input.GetAxis ("GarbageF1") == -1) {
      		
 			if (rocket.transform.parent != null) {
-				//GameObject projectile = Instantiate (rocket, transform.position, Quaternion.identity) as GameObject;
-				rocket.GetComponent<Rigidbody> ().AddForce (new Vector2 (x, -y) * force * 10 * Time.deltaTime);
-				GetComponent<Rigidbody> ().AddForce (new Vector2 (-x, y) * force/2 * Time.deltaTime);
 				rocket.transform.parent = null;
+				Debug.LogWarning (Input.GetAxis ("GarbageF1"));
+				angle1 = transform.eulerAngles.z;
+				if (angle1 > 270 && angle1 < 360 && transform.localScale == new Vector3 (-1, 1, 1)) {
+					angle1 = angle1 - 180;
+				}
+				else if(angle1 > 0 && angle1 < 90 && transform.localScale == new Vector3 (-1, 1, 1)){
+					angle1 = angle1 + 180;
+				}
+				angle1 = angle1 * Mathf.Deg2Rad;
+				rocket.GetComponent<Rigidbody> ().velocity = Vector2.zero;
+				rocket.GetComponent<Rigidbody> ().AddForce (new Vector2(Mathf.Cos(angle1), Mathf.Sin(angle1)) * force * 20 * Time.deltaTime);
 
-				/*playerPosition = this.transform.Find ("Cube").transform.position;
-				foo = new Vector3 (1.56f, 0.28f, 0.0f);
+			    var smoke = Instantiate(RocketSmokeAnimation);
+			    smoke.transform.parent = rocket.transform;
+                smoke.transform.localPosition = new Vector3(-9,1,0);
+			    smoke.transform.rotation = rocket.transform.rotation;
 
-				var myNewRocket = Instantiate (rocket, playerPosition + foo, Quaternion.identity) as GameObject;
-				//myNewRocket.transform = this.transform.Find ("Cube").transform;
-				rocket = myNewRocket;
-				rocket.transform.parent = this.transform.Find ("Cube").transform;
-				rocket.GetComponent<Rigidbody>().velocity = this.GetComponent<Rigidbody>().velocity;
-				rocket.GetComponent<Rigidbody>().velocity = this.GetComponent<Rigidbody>().velocity;
-				rocket.transform.rotation = this.transform.rotation;*/
+                Animator smokeAnimator = smoke.GetComponent<Animator>();
+                if (smokeAnimator != null) smokeAnimator.enabled = true;
 
-
-
-					/*//Debug.Log ("Entered on trigger collide");
-					this.gameObject.SetActive (false);
-					this.transform.parent = player.transform.Find("Cube").transform;
-					//Debug.Log ("supposed to re attach");
-					foo = new Vector3 (1.56f, 0.28f, 0.0f);
-
-					//this.gameObject.transform.position =  player.transform.Find("Cube").transform.position + foo;
-					this.gameObject.transform.localPosition =  foo;
-					//Debug.Log ("repositonned");
-					this.GetComponent<Rigidbody> ().velocity = player.transform.parent.GetComponent<Rigidbody>().velocity;
-					this.transform.rotation = player.transform.parent.rotation; 
-					this.gameObject.SetActive (true);*/
+                GetComponent<Rigidbody> ().AddForce (new Vector2 (-Mathf.Cos(angle1), -Mathf.Sin(angle1)) * force/2 * Time.deltaTime);
 			}
-
-			//rocket.GetComponent<ShootingRocket> ().shoot (x, y);
 		} 
-		/*else {
-			isShooted = false;
-		}*/
-        /*if (isShooted)
-        {
-            GameObject p1 = Instantiate(rocket);
-            System.Threading.Thread.Sleep(10);
-        }
-        */
+			
 		/*
 		if(Mathf.Abs(Input.GetAxis("GarbageF1")) < ){
 			
@@ -127,9 +115,6 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 		void Rotate(){
-    
-        //Debug.Log(x);
-        //Debug.Log(y);
         if (x > 0 && y != 0)
         {
             transform.localScale = new Vector3(1, 1, 1);

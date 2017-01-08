@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Cage
+  - Debris
   - Projectile
+  - Cage
   layers:
   - Default
   - TransparentFX
@@ -40,12 +41,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 4174915241
-    locked: 0
-  - name: Cloud
-    uniqueID: 964383775
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
