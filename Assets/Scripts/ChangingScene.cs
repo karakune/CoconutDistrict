@@ -24,7 +24,6 @@ public class ChangingScene : MonoBehaviour {
 	}
 
 	public void Play(){
-		PlayerPrefs.DeleteAll ();
 		if(!GameVars.inIntro){
 			GameVars.inIntro = true;
 			SceneManager.LoadScene ("Intro");

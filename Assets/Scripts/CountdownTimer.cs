@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
@@ -41,6 +42,7 @@ public class CountdownTimer : MonoBehaviour
         {
             lblTimer.text = "0:00:000";
             this.enabled = false;
+            SceneManager.LoadScene("GarbageManWin");
         }
     }
 

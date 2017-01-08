@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Specialized;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -132,7 +133,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Cage")
 		{
-			Debug.LogWarning ("oh no!!");
+			SceneManager.LoadScene("CamGuyWin");
 		}
 
         if (other.gameObject.tag == "Projectile")

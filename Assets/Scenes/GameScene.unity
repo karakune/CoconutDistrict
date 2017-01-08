@@ -211,14 +211,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4556964417880992, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 1098613615064824, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
       propertyPath: m_TagString
-      value: Projectile
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 114409238643131254, guid: 49750b311a7b9624a93fd34590e77919,
+        type: 2}
+      propertyPath: BoomAnimation
+      value: 
+      objectReference: {fileID: 1000012213035674, guid: 6f1865749f10c744d87d95ae8a999d70,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
   m_IsPrefabParent: 0
@@ -697,7 +699,7 @@ Prefab:
     - target: {fileID: 114082435061102374, guid: 55569d52d24640449848d7ba6943487b,
         type: 2}
       propertyPath: time
-      value: 75
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55569d52d24640449848d7ba6943487b, type: 2}
