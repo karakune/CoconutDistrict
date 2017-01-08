@@ -860,6 +860,14 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AddScore
       objectReference: {fileID: 0}
+    - target: {fileID: 1331597180099920, guid: 55569d52d24640449848d7ba6943487b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338019387433426, guid: 55569d52d24640449848d7ba6943487b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55569d52d24640449848d7ba6943487b, type: 2}
   m_IsPrefabParent: 0
@@ -1430,6 +1438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocket: {fileID: 1625710954}
+  force: 0
 --- !u!114 &2095366571 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114825172261941380, guid: 55569d52d24640449848d7ba6943487b,
