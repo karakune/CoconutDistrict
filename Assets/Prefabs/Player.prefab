@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 75878336538124332}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 75563193680704098}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   RocketSmokeAnimation: {fileID: 1060523532326224, guid: 3c474beb7eb02524ea6f82861a5ddfd9,
     type: 2}
   rocket: {fileID: 1098613615064824}
-  force: 0
+  force: 4000
   stunTime: 15
 --- !u!114 &114409238643131254
 MonoBehaviour:
