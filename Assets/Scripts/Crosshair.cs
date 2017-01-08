@@ -13,8 +13,8 @@ public class Crosshair : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        vertEdge = GameObject.Find("Top");
-        horEdge = GameObject.Find("Right");
+        vertEdge = GameObject.Find("Top Edge");
+        horEdge = GameObject.Find("Right Edge");
         camGuy = transform.parent.GetComponent<CamGuy>();
     }
 	
