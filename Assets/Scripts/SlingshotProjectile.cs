@@ -15,15 +15,13 @@ public class SlingshotProjectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //startSpeed = new Vector3(0, ySpeed, 1);
-        //GetComponent<Rigidbody>().AddForce(startSpeed * Time.deltaTime);
-
         parent = transform.parent.GetComponent<Camera>();
+        gameObject.transform.position = new Vector3(parent.transform.position.x, parent.transform.position.y, -10);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        proximity = System.Math.Abs(0.1f / (gameObject.transform.position.z + 0.5f));
+        proximity = System.Math.Abs(0.1f * (gameObject.transform.localPosition.z + 0.5f));
         ScaleByProximity();
 
         if(framesCounted < lifespan)
@@ -34,12 +32,10 @@ public class SlingshotProjectile : MonoBehaviour {
             parent.GetComponent<CamGuy>().SetShotFired(false);
             Destroy(this.gameObject);
         }
-
-        
     }
 
     void ScaleByProximity()
     {
-        transform.localScale = new Vector3(proximity, proximity, 1);
+        transform.localScale = new Vector3(1 / proximity, 1 / proximity, 1);
     }
 }
