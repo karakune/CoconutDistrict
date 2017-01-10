@@ -8,7 +8,7 @@ public class JunkSpanwer : TimerFunctionsClass
     public float NextSpawnTime = 1.0f;
     public List<GameObject> JunkPrefabTypes = new List<GameObject>();
     public bool GenerationVersLesjoueurs = false;  //random lorsque false;
-
+     
     // Use this for initialization
     public void Start()
     {
@@ -41,10 +41,10 @@ public class JunkSpanwer : TimerFunctionsClass
  
                 var JunkType = Mathf.RoundToInt(Mathf.Floor(UnityEngine.Random.Range(0f, 13.999f)));
 
-                float directionx = Mathf.Floor(UnityEngine.Random.Range(10.0f, 15.0f));
-                Debug.LogWarning("direction1  " + directionx);
+                float directionx = Mathf.Floor(UnityEngine.Random.Range(15.0f, 25.0f));
+ 
                 directionx *= (Mathf.Floor(UnityEngine.Random.Range(0.0f, 1.99f)) * 2 - 1); // -1 ou 1
-                Debug.LogWarning("direction2  " + directionx);
+ 
                 float directiony = UnityEngine.Random.Range(-3.0f, 2.99f);
 
                 var debris = Instantiate(JunkPrefabTypes[JunkType],

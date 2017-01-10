@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Specialized;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+    public bool RocketIsAttached;
 
     private float x;
     private float y;
@@ -42,32 +45,32 @@ public class PlayerMovement : MonoBehaviour {
     {
 		x = Input.GetAxis("GarbageH1");
 		y = Input.GetAxis("GarbageV1");
-        if (x == 0 && y == 0)
-        {
-        }
-        else
-        {
-            Rotate();
-        }
+        Rotate();
 
-		//Debug.LogWarning (Input.GetAxis ("GarbageF1"));
+        //Debug.LogWarning (Input.GetAxis ("GarbageF1"));
 
-		if (Input.GetAxis ("GarbageF1") == -1) {
+        if (Input.GetAxis ("GarbageF1") == -1) {
      		
 			if (rocket.transform.parent != null) {
 				rocket.transform.parent = null;
 				Debug.LogWarning (Input.GetAxis ("GarbageF1"));
 				angle1 = transform.eulerAngles.z;
-				if (angle1 > 270 && angle1 < 360 && transform.localScale == new Vector3 (-1, 1, 1)) {
-					angle1 = angle1 - 180;
-				}
-				else if(angle1 > 0 && angle1 < 90 && transform.localScale == new Vector3 (-1, 1, 1)){
-					angle1 = angle1 + 180;
-				}
-				angle1 = angle1 * Mathf.Deg2Rad;
-				rocket.GetComponent<Rigidbody> ().velocity = Vector2.zero;
-				rocket.GetComponent<Rigidbody> ().AddForce (new Vector2(Mathf.Cos(angle1), Mathf.Sin(angle1)) * force * 20 * Time.deltaTime);
 
+                if (angle1 > 270 && angle1 < 360 && transform.localScale == new Vector3(-1, 1, 1))
+                {
+                    angle1 = angle1 - 180;
+                }
+                else if (angle1 > 0 && angle1 < 90 && transform.localScale == new Vector3(-1, 1, 1))
+                {
+                    angle1 = angle1 + 180; 
+                }
+                angle1 = angle1 * Mathf.Deg2Rad;
+
+                rocket.GetComponent<Rigidbody>().velocity = Vector2.zero;
+                //rocket.GetComponent<Rigidbody>().AddForce(new Vector2(Mathf.Cos(angle1), Mathf.Sin(angle1)) * force * 20 * Time.deltaTime);
+                rocket.GetComponent<Rigidbody>().AddForce( perso.transform.forward * force * 20 * Time.deltaTime);
+                RocketIsAttached = false;
+  
 			    var smoke = Instantiate(RocketSmokeAnimation);
 			    smoke.transform.parent = rocket.transform;
                 smoke.transform.localPosition = new Vector3(-9,1,0);
@@ -76,14 +79,17 @@ public class PlayerMovement : MonoBehaviour {
                 Animator smokeAnimator = smoke.GetComponent<Animator>();
                 if (smokeAnimator != null) smokeAnimator.enabled = true;
 
-                GetComponent<Rigidbody> ().AddForce (new Vector2 (-Mathf.Cos(angle1), -Mathf.Sin(angle1)) * force/2 * Time.deltaTime);
+                GetComponent<Rigidbody> ().AddForce (new Vector2 (-Mathf.Cos(angle1), -Mathf.Sin(angle1)) * force * 2000 * Time.deltaTime);
 			}
-		} 
-			
-		/*
-		if(Mathf.Abs(Input.GetAxis("GarbageF1")) < ){
-			
-		}*/
+		}
+        if (!RocketIsAttached)
+        {
+            rocket.transform.Translate(new Vector2(Mathf.Cos(angle1), Mathf.Sin(angle1)) * force * 20 * Time.deltaTime);
+        }
+        /*
+        if(Mathf.Abs(Input.GetAxis("GarbageF1")) < ){
+            
+        }*/
 		//Debug.LogWarning (Input.GetAxis ("GarbageF1"));
         //p1.transform.parent = Camera.main.transform;
 
@@ -134,6 +140,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (other.gameObject.tag == "Cage")
 		{
 			SceneManager.LoadScene("CamGuyWin");
+
 		}
 
         if (other.gameObject.tag == "Projectile")

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ShootingRocket : MonoBehaviour {
-	public GameObject player;
+	public GameObject Perso;
 
     public GameObject BoomAnimation;
 
@@ -17,16 +17,18 @@ public class ShootingRocket : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+         
 	}
 		
 
-	void OnTriggerEnter(Collider other)
+	public void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Cage")
 		{
+            Debug.LogWarning("Rocket collided with walls");
 			ResetRocketInGun( other);
-		}
+		   
+        }
         if (other.gameObject.tag == "Debris")
 	    {
             
@@ -47,16 +49,16 @@ public class ShootingRocket : MonoBehaviour {
 
     void ResetRocketInGun(Collider other)
     {
-        Debug.Log("Entered on trigger collide");
+         
         gameObject.SetActive(false);
-        transform.parent = player.transform.Find("Cube").transform;
-        Debug.Log("supposed to re attach");
+        transform.parent = Perso.transform.Find("Cube").transform;
+        
         foo = new Vector3(1.56f, 0.36f, 0.15f);
         gameObject.transform.localPosition = foo;
-        Debug.Log("repositonned");
-        GetComponent<Rigidbody>().velocity = player.transform.parent.GetComponent<Rigidbody>().velocity;
-        transform.rotation = player.transform.parent.rotation;
-        transform.rotation.Set(0,0, player.transform.parent.rotation.z,0);
+      
+        //GetComponent<BoxCollider>().velocity = Perso.transform.parent.GetComponent<Rigidbody>().velocity;
+        transform.rotation = Perso.transform.parent.rotation;
+        transform.rotation.Set(0,0, Perso.transform.parent.rotation.z,0);
         
 
         transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
@@ -65,6 +67,8 @@ public class ShootingRocket : MonoBehaviour {
         Animator smoke = gameObject.GetComponentInChildren<Animator>();
         if (smoke != null) smoke.enabled = false;
 
-        Debug.Log(transform.localScale.x + " c");
+      
+
+        Perso.transform.parent.GetComponent<PlayerMovement>().RocketIsAttached = true;
     }
 }
