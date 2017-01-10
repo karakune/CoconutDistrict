@@ -211,41 +211,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 54599618849478372, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54291460925272950, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: m_Mass
-      value: 0.0000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 75563193680704098, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114148391651909892, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: force
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114148391651909892, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: RocketIsAttached
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 54291460925272950, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 114409238643131254, guid: 49750b311a7b9624a93fd34590e77919,
-        type: 2}
-      propertyPath: Perso
-      value: 
-      objectReference: {fileID: 1549686748}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
   m_IsPrefabParent: 0
@@ -797,11 +762,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1543199888}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1549686748 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1718636477113144, guid: 49750b311a7b9624a93fd34590e77919,
-    type: 2}
-  m_PrefabInternal: {fileID: 256853033}
 --- !u!1 &1726588727
 GameObject:
   m_ObjectHideFlags: 0

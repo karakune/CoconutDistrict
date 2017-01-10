@@ -7,25 +7,28 @@ public class ShootingRocket : MonoBehaviour {
     public GameObject BoomAnimation;
 
     private Vector3 playerPosition;
-	private Vector3 foo;
-	private Quaternion lol; 
-
-	// Use this for initialization
-	void Start () {
 	
-	}
+	private Quaternion lol;
+    private Vector3 offset;
+
+    // Use this for initialization
+    void Start () {
+        offset = new Vector3(1.56f, 0.28f, 0.15f);
+    }
 	
 	// Update is called once per frame
-	void Update () {
-         
-	}
+	public void Update ()
+	{
+        if(Perso.transform.parent.GetComponent<PlayerMovement>().RocketIsAttached)
+            gameObject.transform.localPosition = offset;
+    }
 		
 
 	public void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Cage")
 		{
-            Debug.LogWarning("Rocket collided with walls");
+            
 			ResetRocketInGun( other);
 		   
         }
@@ -49,14 +52,20 @@ public class ShootingRocket : MonoBehaviour {
 
     void ResetRocketInGun(Collider other)
     {
+        
+        
+        Perso.transform.parent.GetComponent<PlayerMovement>().RocketIsAttached = true;
          
+        gameObject.GetComponent<Rigidbody>().velocity = Perso.transform.parent.GetComponent<Rigidbody>().velocity;
+      
         gameObject.SetActive(false);
         transform.parent = Perso.transform.Find("Cube").transform;
         
-        foo = new Vector3(1.56f, 0.36f, 0.15f);
-        gameObject.transform.localPosition = foo;
-      
-        //GetComponent<BoxCollider>().velocity = Perso.transform.parent.GetComponent<Rigidbody>().velocity;
+
+       
+        gameObject.transform.localPosition = offset;
+        gameObject.transform.localRotation = Quaternion.identity;
+         //GetComponent<BoxCollider>().velocity = Perso.transform.parent.GetComponent<Rigidbody>().velocity;
         transform.rotation = Perso.transform.parent.rotation;
         transform.rotation.Set(0,0, Perso.transform.parent.rotation.z,0);
         
@@ -67,8 +76,7 @@ public class ShootingRocket : MonoBehaviour {
         Animator smoke = gameObject.GetComponentInChildren<Animator>();
         if (smoke != null) smoke.enabled = false;
 
-      
+        
 
-        Perso.transform.parent.GetComponent<PlayerMovement>().RocketIsAttached = true;
     }
 }
