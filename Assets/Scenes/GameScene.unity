@@ -211,6 +211,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 75563193680704098, guid: 49750b311a7b9624a93fd34590e77919,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579309606107126, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579309606107126, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49750b311a7b9624a93fd34590e77919, type: 2}
   m_IsPrefabParent: 0
@@ -930,6 +943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929940b73a747ba4eb99e2d347930ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2.25
   projectile: {fileID: 1000012922425290, guid: 82a18495a96424f4fb93f3010f80fba1, type: 2}
   projectileDistance: 200

@@ -324,7 +324,7 @@ ConstantForce:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408114558102566}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Force: {x: 0, y: -0.25, z: 0}
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ec5d55fa3405f418f0d3092febcf5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RocketIsAttached: 0
   RocketSmokeAnimation: {fileID: 1060523532326224, guid: 3c474beb7eb02524ea6f82861a5ddfd9,
     type: 2}
   rocket: {fileID: 1098613615064824}
