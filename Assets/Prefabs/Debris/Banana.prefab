@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54717629563512476}
   - component: {fileID: 75202603857081228}
   - component: {fileID: 114410804447906896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Banana
   m_TagString: Debris
   m_Icon: {fileID: 0}

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54627741576929386}
   - component: {fileID: 75809284352655256}
   - component: {fileID: 114220034856324758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pomme
   m_TagString: Debris
   m_Icon: {fileID: 0}

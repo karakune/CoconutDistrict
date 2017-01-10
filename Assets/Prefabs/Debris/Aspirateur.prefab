@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54284115635289576}
   - component: {fileID: 75800025554720060}
   - component: {fileID: 114780803095999348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aspirateur
   m_TagString: Debris
   m_Icon: {fileID: 0}

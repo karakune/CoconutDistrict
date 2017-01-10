@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 75397861342433940}
   - component: {fileID: 114497042177022804}
   - component: {fileID: 114711309194095294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RussianSatellite
   m_TagString: Debris
   m_Icon: {fileID: 0}

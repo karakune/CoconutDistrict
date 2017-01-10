@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54389862299738408}
   - component: {fileID: 75741093718361244}
   - component: {fileID: 114769380915632130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cat
   m_TagString: Debris
   m_Icon: {fileID: 0}

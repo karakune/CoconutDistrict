@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54214588499156666}
   - component: {fileID: 75696542292010700}
   - component: {fileID: 114952970122006088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WashingMachine
   m_TagString: Debris
   m_Icon: {fileID: 0}

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54004243947234156}
   - component: {fileID: 75933482106703352}
   - component: {fileID: 114787075784625684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Scie
   m_TagString: Debris
   m_Icon: {fileID: 0}

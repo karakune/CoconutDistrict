@@ -14,4 +14,5 @@ public class Debris : MonoBehaviour {
         // lock x y rotation du to collider collisions.
 		gameObject.transform.rotation.Set(0,0, gameObject.transform.rotation.z,0);
 	}
+ 
 }

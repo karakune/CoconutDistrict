@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54004685309119822}
   - component: {fileID: 75461579754872956}
   - component: {fileID: 114267754205073988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Litiere
   m_TagString: Debris
   m_Icon: {fileID: 0}

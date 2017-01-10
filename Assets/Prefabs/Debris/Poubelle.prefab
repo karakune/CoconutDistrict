@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54165775124370138}
   - component: {fileID: 75842036484998944}
   - component: {fileID: 114705759003631664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Poubelle
   m_TagString: Debris
   m_Icon: {fileID: 0}

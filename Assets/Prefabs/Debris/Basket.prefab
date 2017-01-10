@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54071872789839192}
   - component: {fileID: 75262671171857498}
   - component: {fileID: 114266020693458426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Basket
   m_TagString: Debris
   m_Icon: {fileID: 0}

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54258758192469550}
   - component: {fileID: 75514719037598216}
   - component: {fileID: 114082180150012102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bottle
   m_TagString: Debris
   m_Icon: {fileID: 0}

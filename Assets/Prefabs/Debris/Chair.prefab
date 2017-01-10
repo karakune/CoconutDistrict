@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54988143144157624}
   - component: {fileID: 75650235845297568}
   - component: {fileID: 114326540538283160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chair
   m_TagString: Debris
   m_Icon: {fileID: 0}
