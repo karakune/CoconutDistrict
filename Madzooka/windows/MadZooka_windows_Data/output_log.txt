@@ -1,0 +1,167 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R7 M265 (ID=0x6900)
+    Vendor:   ATI
+    VRAM:     2035 MB
+    Driver:   15.200.1045.0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  2.311 seconds
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Kerby\Desktop\Madzooka\windows\MadZooka_windows_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.655854 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.738592 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.222643 ms (FindLiveObjects: 0.026843 ms CreateObjectMapping: 0.022501 ms MarkObjects: 0.161850 ms  DeleteObjects: 0.010658 ms)
+
+0
+3
+1
+3
+2
+3
+3
+3
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.719643 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.303963 ms (FindLiveObjects: 0.043423 ms CreateObjectMapping: 0.031975 ms MarkObjects: 0.214748 ms  DeleteObjects: 0.012632 ms)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Rocket"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Player/Perso/Cube/Rocket"
+ 
+(Filename:  Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.253679 ms
+
+Unloading 188 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 4.283519 ms (FindLiveObjects: 0.086452 ms CreateObjectMapping: 0.073819 ms MarkObjects: 0.316201 ms  DeleteObjects: 3.805467 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.273962 ms
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,iTweenPath].Add (System.String key, .iTweenPath value) [0x00000] in <filename unknown>:0 
+  at iTweenPath.OnEnable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.341465 ms (FindLiveObjects: 0.043028 ms CreateObjectMapping: 0.037896 ms MarkObjects: 0.250276 ms  DeleteObjects: 0.009868 ms)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Player/Perso/Cube/Rocket"
+ 
+(Filename:  Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.566794 ms
+
+Unloading 188 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 5.269230 ms (FindLiveObjects: 0.066319 ms CreateObjectMapping: 0.069872 ms MarkObjects: 0.294884 ms  DeleteObjects: 4.835786 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.223433 ms
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,iTweenPath].Add (System.String key, .iTweenPath value) [0x00000] in <filename unknown>:0 
+  at iTweenPath.OnEnable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.247908 ms (FindLiveObjects: 0.027633 ms CreateObjectMapping: 0.023290 ms MarkObjects: 0.187904 ms  DeleteObjects: 0.008289 ms)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Player/Perso/Cube/Rocket"
+ 
+(Filename:  Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.404944 ms
+
+Unloading 188 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 4.585509 ms (FindLiveObjects: 0.069082 ms CreateObjectMapping: 0.069477 ms MarkObjects: 0.307911 ms  DeleteObjects: 4.137459 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.223827 ms
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,iTweenPath].Add (System.String key, .iTweenPath value) [0x00000] in <filename unknown>:0 
+  at iTweenPath.OnEnable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.281857 ms (FindLiveObjects: 0.041054 ms CreateObjectMapping: 0.030791 ms MarkObjects: 0.201326 ms  DeleteObjects: 0.008289 ms)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Player/Perso/Cube/Rocket"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Rocket"
+ 
+(Filename:  Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.593638 ms
+
+Unloading 188 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 4.559850 ms (FindLiveObjects: 0.073030 ms CreateObjectMapping: 0.070266 ms MarkObjects: 0.297647 ms  DeleteObjects: 4.117721 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.285804 ms
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,iTweenPath].Add (System.String key, .iTweenPath value) [0x00000] in <filename unknown>:0 
+  at iTweenPath.OnEnable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.360808 ms (FindLiveObjects: 0.044212 ms CreateObjectMapping: 0.038686 ms MarkObjects: 0.266461 ms  DeleteObjects: 0.011053 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.295596 ms
+
+Unloading 188 unused Assets to reduce memory usage. Loaded Objects now: 257.
+Total: 4.878815 ms (FindLiveObjects: 0.075793 ms CreateObjectMapping: 0.089215 ms MarkObjects: 0.301200 ms  DeleteObjects: 4.411026 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 8f8 -> priority: 1 
